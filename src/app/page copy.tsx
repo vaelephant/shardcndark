@@ -31,23 +31,18 @@ export default async function Home() {
               />
               <h2 className="tex-md font-semibold"> {repo.owner.login}</h2>
             </div>
-
-
             <div className=" flex flex-col justify-start text-start">
               <p className="py-1">repo name: {repo.name}</p>
               <p className="m-0 max-w-[30ch] text-sm opacity-50">
                 {repo.description}
               </p>
             </div>
-
-
-           <div className="mt-4 ">
+            <div className="mt-4 ">
               <Link href={`${repo.id}`}>
                 <Button className="capitalize" variant="outline">
                   view commits
                 </Button>
               </Link>
-              <h2 className="tex-md font-semibold"> {repo.id}</h2>
             </div>
           </div>
         ))}
